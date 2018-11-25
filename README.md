@@ -1,2 +1,3 @@
-# Breakout-nds
-Nintendo DS Breakout with Libnds 
+#NioEngine Nintendo DS Template.
+Nintendo DS simple engine for Sprites and BG
+ 
