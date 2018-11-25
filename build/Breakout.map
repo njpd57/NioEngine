@@ -243,19 +243,19 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/8.1.0/crtbegin.o
  .data.__dso_handle
                 0x0000000000000000        0x4 /opt/devkitpro/devkitARM/lib/gcc/arm-none-eabi/8.1.0/crtbegin.o
- .text          0x0000000000000000      0x160 Sprite.o
+ .text          0x0000000000000000      0x19c Sprite.o
  .data          0x0000000000000000        0x0 Sprite.o
  .bss           0x0000000000000000        0x0 Sprite.o
- .debug_info    0x0000000000000000     0x211b Sprite.o
+ .debug_info    0x0000000000000000     0x22cd Sprite.o
  .debug_abbrev  0x0000000000000000      0x523 Sprite.o
  .debug_loc     0x0000000000000000       0xfe Sprite.o
  .debug_aranges
                 0x0000000000000000       0x20 Sprite.o
  .debug_ranges  0x0000000000000000       0x30 Sprite.o
- .debug_line    0x0000000000000000      0x487 Sprite.o
- .debug_str     0x0000000000000000     0x119b Sprite.o
+ .debug_line    0x0000000000000000      0x4cd Sprite.o
+ .debug_str     0x0000000000000000     0x1263 Sprite.o
  .comment       0x0000000000000000       0x23 Sprite.o
- .debug_frame   0x0000000000000000       0xa4 Sprite.o
+ .debug_frame   0x0000000000000000       0xf0 Sprite.o
  .ARM.attributes
                 0x0000000000000000       0x2b Sprite.o
  .data          0x0000000000000000        0x0 Sytem.o

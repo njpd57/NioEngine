@@ -76,7 +76,7 @@ void sprite::HorizontalFlip(bool hflip)
 {
 	Hflip=hflip;
 };
-void sprite::Hide(bool SHW)
+void sprite::setHide(bool SHW)
 {
 	Hide=SHW;
 };

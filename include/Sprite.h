@@ -31,7 +31,7 @@ class sprite
 		void setMosaic(bool mosaic);
 		void VerticalFlip(bool vflip);
 		void HorizontalFlip(bool hflip);
-		void Hide(bool SHW);
+		void setHide(bool SHW);
 		void setXY(int sx,int sy);
 		void loadGfx(bool onMain,int size);
 		void Update();
