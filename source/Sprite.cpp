@@ -2,7 +2,12 @@
 
 sprite::sprite(int snum)
 {
-	spritenum=snum;	
+	spritenum=snum;
+	Mosaic=false;
+	Vflip=false;
+	Hflip=false;
+	Hide=false;
+	DoubleSize=false;	
 };
 
 
@@ -52,10 +57,26 @@ void sprite::Update()
 	switch (Main)
 	{
 		case true:
-			oamSet(&oamMain,spritenum,x,y,0,paletteNum,spriteSize,spriteColor,gfx,-1,false,false,false,false,false);
+			oamSet(&oamMain,spritenum,x,y,0,paletteNum,spriteSize,spriteColor,gfx,-1,DoubleSize,Hide,Hflip,Vflip,Mosaic);
 			break;
 		case false:
-			oamSet(&oamSub,spritenum,x,y,0,paletteNum,spriteSize,spriteColor,gfx,-1,false,false,false,false,false);
+			oamSet(&oamSub,spritenum,x,y,0,paletteNum,spriteSize,spriteColor,gfx,-1,DoubleSize,Hide,Hflip,Vflip,Mosaic);
 			break;
 	}
-}
+};
+void sprite::setMosaic(bool mosaic)
+{
+	Mosaic = mosaic;
+};
+void sprite::VerticalFlip(bool vflip)
+{
+	Vflip = vflip;
+};
+void sprite::HorizontalFlip(bool hflip)
+{
+	Hflip=hflip;
+};
+void sprite::Hide(bool SHW)
+{
+	Hide=SHW;
+};
