@@ -19,13 +19,6 @@ void LoadOam()
 	oamInit(&oamSub,SpriteMapping_1D_32,false);	
 }
 
-#include <nds.h>
-#include "System.h"
-
-int mapx=0;
-int mapy=0;
-
-
 void LoadBg(int layer, BgType type,BgSize bgsize, int mapBase, int tileBase,bool main,const void* source,void* dest,uint32 Tilesize,const void*sourcePal,uint32 PalSize)
 {
     if(main)
@@ -66,47 +59,3 @@ void LoadMap(
     }
 }
 
-
-
-void setStartXY(int startx,int starty)
-{
-    mapx=startx;
-    mapy=starty;
-}
-
-void Input(int id, int width, int height,int PlayerX,int PlayerY)
-{
-    int keys=keysCurrent();
-    if(keys & KEY_A);
-    if(keys & KEY_UP){
-        PlayerY--;
-        mapy--;
-    }
-    if(keys & KEY_DOWN){
-        PlayerY++;
-        mapy++;
-    }
-    if(keys & KEY_LEFT){
-        PlayerX--;
-        mapx--;
-    }
-    if(keys & KEY_RIGHT){
-        PlayerX++;
-        mapx++;
-    }
-    if(mapx < 0) mapx = 0;
-    if(mapx >= width - 256) mapx = width - 1 - 256;
-    if(mapy < 0) mapy = 0;
-    if(mapy >= height - 192) mapy = height - 1 - 192;
-    bgSetScroll(id, mapx, mapy);
-}
-
-int Returnmapx()
-{
-    return mapx;
-}
-
-int Returnmapy()
-{
-    return mapy;
-}
